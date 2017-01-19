@@ -1,0 +1,263 @@
+/* HSL */
+$color1: hsla(229%, 19%, 22%, 1);
+$color2: hsla(180%, 1%, 75%, 1);
+$color3: hsla(0%, 0%, 100%, 1);
+$color4: hsla(18%, 83%, 63%, 1);
+$color5: hsla(218%, 19%, 38%, 1);
+
+/* RGB */
+$color1: rgba(45, 49, 66, 1);
+$color2: rgba(191, 192, 192, 1);
+$color3: rgba(255, 255, 255, 1);
+$color4: rgba(239, 131, 84, 1);
+$color5: rgba(79, 93, 117, 1);
+
+a{
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+  }
+}
+body {
+  padding-top: 51px;
+
+}
+.barraprincipal0{
+  background:$color3;
+
+}
+.barraprincipal{
+  .nombre{
+    font-size: 35px;
+  }
+  ul{
+    padding-top:10px;
+    display: inline-block;
+    float: right;
+    li{
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        border-radius:50%;
+        border:2px solid black;
+        text-align: center;
+        padding-top:3px;
+        margin: 0 6px;
+        background:black;
+        &:hover{
+          border:2px solid $color4;
+          background:$color4;
+          span{
+            color:black;
+          }
+        }
+      span{
+       
+        color:white;
+        font-size: 15px;
+       
+      }
+    }
+  }
+}
+
+#main-logo{
+  width: 50px;
+  padding-top: 1px;
+}
+
+.ejemplos{
+  display: flex;
+  justify-content: center;
+  li{
+    padding:0 20px;
+    text-transform: uppercase;
+  }
+}
+
+//SLIDER DE FOTOS
+.sliderfotos{
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+
+//CUADRADOS DE NOTICIAS
+.cuadrado-contenedor{
+  max-width: 100%;
+  height: 300px;
+  background:$color3;
+  padding:10px;
+.cuadrado{
+    max-width: 100%;
+    height: 280px;
+    background: $color2;
+    text-align: center;
+    padding:0;
+    .rectangulo-naranja{
+      background:$color4;
+      margin-top: 255px;
+      height: 25px;
+      max-width: 100%;
+     h3{
+       font-size: 14px;
+       color:$color1;
+       text-transform: uppercase;
+       padding-top:4px;
+      
+       }
+     }
+    &:hover{
+      .texto-escondido{
+        top:0;
+        display: block;
+        height: 280px;
+        font-size: 14px;
+        p{
+        padding:170px 30px 30px 0px;
+        text-decoration: none;
+        color:$color3;
+        }   
+
+      }
+    }
+    
+    .texto-escondido{
+      display: hidden;
+      height: 0px;
+      max-width: 100%;
+      background:rgba(45, 49, 66, 0.4);
+      position: absolute;
+      top:300px;
+      transition:0.2s;
+      text-align: left;
+      font-size: 0px;
+  }
+}
+}
+.cuadrado-contenedor2{
+  max-width: 100%;
+  height: 300px;
+  background:$color3;
+  padding:10px;
+
+.cuadradobig{
+    max-width: 100%;
+    height: 280px;
+    background: $color2;
+    padding:0;
+    .rectangulo-naranja{
+      background:$color4;
+      margin-top: 255px;
+      height: 25px;
+      text-align: center;
+     h3{
+       font-size: 14px;
+       color:$color1;
+       text-transform: uppercase;
+       padding-top:4px;
+      
+       }
+     }
+    &:hover{
+      .texto-escondido{
+        top:0;
+        display: block;
+        height: 280px;
+        font-size: 14px;
+        p{
+        padding:190px 30px 30px 0px;
+        color: $color3;
+        }      
+      }
+    }
+    
+    .texto-escondido{
+      display: hidden;
+      height: 0px;
+      max-width: 100%;
+      background:rgba(45, 49, 66, 0.4);
+      position: absolute;
+      top:300px;
+      transition:0.2s;
+      text-align: left;
+      font-size: 0px;
+  }
+} 
+}
+
+
+//NEWSLETTER
+.antefooter{
+  background:$color4;
+  height: 100px;
+  margin-top: 20px;
+  text-align: center;
+  height: 200px;
+  .newsletter{
+    padding-top:40px;
+  h5{
+    font-size: 20px;
+    
+    }
+  }
+}
+
+
+//FOOTER
+footer{
+  padding-top: 20px;
+  background:$color1;
+  font-size: 11px;
+
+  ul{
+    color:$color3;
+    list-style: none;
+    padding-top:5px;
+    }
+    .redes{
+      font-size: 20px;
+      padding-bottom:18px;
+      li{
+        border:2px solid $color2;
+        border-radius:50%;
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        text-align: center;
+        color:$color2;
+        &:hover{
+          color:$color4;
+          border:2px solid $color4;
+        }
+        span{
+          position:relative;
+          top:5px;
+        }
+
+      }
+
+    }
+}
+
+
+//NOTICIA
+
+.noticia{
+  text-align: center;
+
+  h1{
+    text-transform: uppercase;
+    padding:30px 0;
+  }
+
+  .texto-noticia{
+    text-align: left;
+    margin-top: 40px;
+  }
+  .imagen-chica{
+    margin: 40px 0;
+    max-width: 100%;
+    text-align: center;
+  }
+}
